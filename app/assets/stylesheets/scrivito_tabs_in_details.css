@@ -1,0 +1,30 @@
+.scrivito_tabs .scrivito_tabs_title {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  float: left;
+  margin: 0 .25em 0 0;
+  padding: 10px;
+}
+
+.scrivito_tabs .scrivito_tabs_title a {
+  color: #666;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.scrivito_tabs .scrivito_tabs_title.scrivito_tabs_active {
+  background: #ddd;
+  box-shadow: 0 -10px 20px -15px black;
+}
+
+.scrivito_tabs .scrivito_tabs_clear {
+  clear: both;
+}
+
+.scrivito_tabs .scrivito_tabs_block {
+  background: #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
