@@ -1,14 +1,13 @@
 ;(function() {
   scrivito.on('content', function(content) {
-    $content = $(content);
-
-    $content.find('.scrivito_tabs_block').hide();
-    $content.find('.scrivito_tabs_block:first').show();
-
-    $content.find('.scrivito_tabs').each(function() {
+    $(content).find('.scrivito_tabs').each(function() {
       var $tabs = $(this);
-      var $titles = $tabs.find('.scrivito_tabs_title');
-      var $blocks = $tabs.find('.scrivito_tabs_block');
+
+      var $titles = $tabs.find('> .scrivito_tabs_titles > .scrivito_tabs_title');
+      var $blocks = $tabs.find('> .scrivito_tabs_blocks > .scrivito_tabs_block');
+
+      $blocks.hide();
+      $blocks.eq(0).show();
 
       $titles.each(function() {
         var $title = $(this);
