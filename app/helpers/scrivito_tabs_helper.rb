@@ -35,7 +35,7 @@ module ScrivitoTabsHelper
     private
 
     def render_titles
-      content_tag(:div) do
+      content_tag(:div, class: 'scrivito_tabs_titles') do
         capture do
           @titles.each_with_index do |title, index|
             concat(render_title(title, index))
@@ -54,7 +54,7 @@ module ScrivitoTabsHelper
     end
 
     def render_blocks
-      content_tag(:div) do
+      content_tag(:div, class: 'scrivito_tabs_blocks') do
         capture do
           @blocks.each_with_index do |block, index|
             concat(render_block(block, index))
